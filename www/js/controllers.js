@@ -72,7 +72,13 @@ angular.module('app.controllers', [])
     $http.get('js/actividadesculturales.json')
     .success(function(data){
         console.log("detallearte");
-        $scope.data = data[0][$state.params.id]
+        $scope.data_id = $state.params.id;
+        $scope.data_fecha = $state.params.fecha;
+        $scope.data_evento = $state.params.evento;
+        $scope.data_tipo = $state.params.tipo;
+        $scope.data_lugar = $state.params.lugar;
+        $scope.data_hora = $state.params.hora;
+       
     })
     .error(function(data){
         console.log("error:"+ data);

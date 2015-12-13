@@ -1,14 +1,20 @@
 <ion-view title="detalle">
     <ion-content overflow-scroll="true" padding="false" class="has-header">
-        <h5>Hoy, 12 de Diciembre - {{data[0]}}</h5>
-        <h1>ARTE en el parque 2</h1>
+        <div style="width:100%; background-color:#6ab253;padding:2%;color:#FFFFFF;">
+            <h5 class="ion-calendar" style="width:100%;text-align:center;color:#FFFFFF;">&nbsp;&nbsp;<!--Hoy, -->{{data_fecha}}</h5>
+            <h1 style="width:100%;text-align:center;color:#FFFFFF;">{{data_evento}}</h1>
+        </div>
         <ion-list>
-            <ion-item>4.0 valoracion</ion-item>
+            <ion-item><h1>4.0 </h1>valoracion</ion-item>
         </ion-list>
-        <div>
+        <div style="margin:2%">
             <p>
-                <strong>Descripcion</strong>
-                Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly Some friendly</p>
+                <strong>{{data_tipo}} </strong><br/><br/>
+                Lugar: {{data_lugar}}<br/>
+                Fecha: {{data_fecha}}<br/>
+                Hora: {{data_hora}}<br/>
+                
+            </p>
         </div>
         <div>
             <p>
@@ -18,7 +24,9 @@
         <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; width: 100%; height: auto; background-color: rgb(255, 255, 255);">
             <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
         </div>
-        <a href="#/page5" class="button button-positive  ">Me interesa</a>
-        <a href="#/page3" class="button button-positive button-clear ">No interesa</a>
+        <div style="width:100%">
+            <a href="#/page5" class="button button-positive  ">Me interesa</a>
+            <a href="#/page3" class="button button-positive button-clear ">No interesa</a>
+        </div>
     </ion-content>
 </ion-view>

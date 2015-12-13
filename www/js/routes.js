@@ -73,7 +73,7 @@ angular.module('app.routes', [])
     })
         
     .state('detalleArte', {
-      url: '/detalleArte/:id',
+      url: '/detalleArte/:id/:fecha/:evento/:tipo/:lugar/:hora',
       templateUrl: 'templates/detalleArte.html',
       controller: 'detalleArteCtrl'
     })  

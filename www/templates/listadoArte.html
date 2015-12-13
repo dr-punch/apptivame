@@ -1,10 +1,10 @@
 <ion-view title="listado">
     <ion-content overflow-scroll="true" padding="false" class="has-header">
-        <ion-list  ng-repeat="item in listadosvc|orderBy:item[1]:reverse">
+        <ion-list  ng-repeat="item in listadosvc">
             <!--
             <ion-item>Hoy, 12 de Diciembre</ion-item>
             -->
-            <ion-item class="item-thumbnail-left" href="#/detalleArte/{{item[0]}}">
+            <ion-item class="item-thumbnail-left" href="#/detalleArte/{{item[0]}}/{{item[1]}}/{{item[6]}}/{{item[5]}} - {{item[7]}}/{{item[3]}} {{item[2]}}/{{item[4]}}">
                 <img src="img/ico_arte.jpg">
                 <h2>{{item[5]}} - {{item[6]}}</h2>
                 <p>{{item[1]}} - {{item[4]}}</p>
