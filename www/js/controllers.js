@@ -56,11 +56,23 @@ angular.module('app.controllers', [])
 
 }])
 
-controller('listadoComidaSanaCtrl', ['$scope','$http','$state',function($scope,$http,$state) {
+.controller('listadoComidaSanaCtrl', ['$scope','$http','$state',function($scope,$http,$state) {
     $http.get('js/comidasana.json')
     .success(function(data){
         console.log("ListadoComidaSana:" + data);
         $scope.listadosvc = data.result;
+    })
+    .error(function(data){
+        console.log("error:"+ data);
+    });
+
+}])
+
+.controller('detalleArteCtrl', ['$scope','$http','$state',function($scope,$http,$state) {
+    $http.get('js/actividadesculturales.json')
+    .success(function(data){
+        console.log("detallearte");
+        $scope.data = data[0][$state.params.id]
     })
     .error(function(data){
         console.log("error:"+ data);

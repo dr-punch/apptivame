@@ -72,7 +72,11 @@ angular.module('app.routes', [])
       controller: 'detalleCtrl'
     })
         
-      
+    .state('detalleArte', {
+      url: '/detalleArte/:id',
+      templateUrl: 'templates/detalleArte.html',
+      controller: 'detalleArteCtrl'
+    })  
     
       
         
