@@ -1,0 +1,43 @@
+<ion-view title="listado">
+    <ion-content overflow-scroll="true" padding="false" class="has-header">
+        <ion-list  ng-repeat="item in listadosvc|orderBy:item[1]:reverse">
+            <!--
+            <ion-item>Hoy, 12 de Diciembre</ion-item>
+            -->
+            <ion-item class="item-thumbnail-left" href="#/page4">
+                <img src="img/xun2UsdKR2qnuUzkunlm_cine.jpg">
+                <h2>{{item[5]}} - {{item[6]}}</h2>
+                <p>{{item[1]}} - {{item[4]}}</p>
+            </ion-item>
+            
+            <!--
+            <ion-item class="item-thumbnail-left">
+                <img src="img/xun2UsdKR2qnuUzkunlm_cine.jpg">
+                <h2>Cine</h2>
+                <p>fecha</p>
+            </ion-item>
+            <ion-item class="item-thumbnail-left">
+                <img src="img/xun2UsdKR2qnuUzkunlm_cine.jpg">
+                <h2>Cine</h2>
+                <p>fecha</p>
+            </ion-item>
+            -->
+            
+            
+            <!--
+            <ion-item>Mañana, 13 de Diciembre</ion-item>
+            <ion-item class="item-thumbnail-left">
+                <img src="img/xun2UsdKR2qnuUzkunlm_cine.jpg">
+                <h2>Cine</h2>
+                <p>fecha</p>
+            </ion-item>
+            <ion-item>Lunes 14 de Diciembre</ion-item>
+            <ion-item class="item-thumbnail-left">
+                <img src="img/xun2UsdKR2qnuUzkunlm_cine.jpg">
+                <h2>Cine</h2>
+                <p>fecha</p>
+            </ion-item>
+            -->
+        </ion-list>
+    </ion-content>
+</ion-view>
